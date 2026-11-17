@@ -265,7 +265,9 @@ export const view3Layers = {
     legend: ["molto favorita", "favorita", "intermedia", "esposta", "molto esposta"],
     numericLegend: legendRanges.uhei.numericLegend,
     dataUrl: raster("UHEI_2026_summer_30m.tif"),
-    raster: { palette: "uhei", range: legendRanges.uhei.range, alpha: 255, transparentValues: [0], maskToBoundary: true },
+    noDataLabel: "Acqua (esclusa dall'indice)",
+    noDataDescription: "Qui almeno metà della superficie è acqua (corsi d'acqua, laghi o mare). L'indice non viene calcolato: l'acqua non ha verde e riflette poca luce, quindi risulterebbe \"esposta\" anche se non è una zona di calore. Il suo effetto rinfrescante resta visibile nelle temperature delle rive.",
+    raster: { palette: "uhei", range: legendRanges.uhei.range, alpha: 255, waterMaskUrl: raster("water_mask_2026_30m.tif"), transparentValues: [0], maskToBoundary: true },
     className: "layer-uhei",
   },
   ndvi: {
@@ -331,7 +333,9 @@ export const view3Layers = {
     legend: ["bassa e verde", "intermedio", "alta e poco verde"],
     numericLegend: legendRanges.hvi.numericLegend,
     dataUrl: raster("HVI_2026_summer_30m.tif"),
-    raster: { palette: "diverging", range: legendRanges.hvi.range, neutral: 0, alpha: 255, maskToBoundary: true },
+    noDataLabel: "Acqua (esclusa dall'indice)",
+    noDataDescription: "Qui almeno metà della superficie è acqua (corsi d'acqua, laghi o mare). L'indice non viene calcolato: l'acqua non ha verde e riflette poca luce, quindi risulterebbe \"esposta\" anche se non è una zona di calore. Il suo effetto rinfrescante resta visibile nelle temperature delle rive.",
+    raster: { palette: "diverging", range: legendRanges.hvi.range, neutral: 0, alpha: 255, waterMaskUrl: raster("water_mask_2026_30m.tif"), maskToBoundary: true },
     className: "layer-hvi",
   },
   hri: {
@@ -351,7 +355,9 @@ export const view3Layers = {
     legend: ["temp. bassa, riflettente", "intermedio", "temp. alta, assorbente"],
     numericLegend: legendRanges.hri.numericLegend,
     dataUrl: raster("HRI_2026_summer_30m.tif"),
-    raster: { palette: "diverging", range: legendRanges.hri.range, neutral: 0, alpha: 255, maskToBoundary: true },
+    noDataLabel: "Acqua (esclusa dall'indice)",
+    noDataDescription: "Qui almeno metà della superficie è acqua (corsi d'acqua, laghi o mare). L'indice non viene calcolato: l'acqua non ha verde e riflette poca luce, quindi risulterebbe \"esposta\" anche se non è una zona di calore. Il suo effetto rinfrescante resta visibile nelle temperature delle rive.",
+    raster: { palette: "diverging", range: legendRanges.hri.range, neutral: 0, alpha: 255, waterMaskUrl: raster("water_mask_2026_30m.tif"), maskToBoundary: true },
     className: "layer-hri",
   },
 };

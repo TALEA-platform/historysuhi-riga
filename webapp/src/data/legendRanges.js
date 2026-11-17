@@ -58,36 +58,36 @@ export const legendRanges = {
   "uhei": {
     "range": [
       0.97,
-      1.98
+      2.11
     ],
     "numericLegend": [
       "0.97",
-      "1.48",
-      "1.98"
+      "1.54",
+      "2.11"
     ]
   },
   "hvi": {
     "range": [
       -0.87,
-      0.22
+      0.35
     ],
     "neutral": 0,
     "numericLegend": [
       "-0.87",
       "0",
-      "+0.22"
+      "+0.35"
     ]
   },
   "hri": {
     "range": [
       -0.07,
-      0.56
+      0.57
     ],
     "neutral": 0,
     "numericLegend": [
       "-0.07",
       "0",
-      "+0.56"
+      "+0.57"
     ]
   },
   "ndvi": {

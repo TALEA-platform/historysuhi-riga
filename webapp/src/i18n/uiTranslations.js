@@ -367,6 +367,9 @@ const TRANSLATIONS = {
     "n/a": "nav datu",
     "Apkaime-level data are averages: they help comparisons, but they do not remove internal differences within each neighbourhood.": "Apkaimju dati ir vidējās vērtības: tie palīdz salīdzināt, bet nenovērš iekšējās atšķirības katrā apkaimē.",
     "Municipal boundaries and apkaime polygons used to make comparisons easier to read": "Pašvaldības robežas un apkaimju poligoni, kas atvieglo salīdzinājumu lasīšanu",
+    "Water (excluded from the index)": "Ūdens (izslēgts no indeksa)",
+    "At least half of this surface is water (rivers, lakes or sea). The index is not computed here: water has no vegetation and reflects little sunlight, so it would look \"exposed\" even though it is not a hot spot. Its cooling effect remains visible in the temperatures along the shores.": "Vismaz puse no šīs virsmas ir ūdens (upes, ezeri vai jūra). Indekss šeit netiek aprēķināts: ūdenī nav veģetācijas un tas atstaro maz saules gaismas, tāpēc tas izskatītos “pakļauts karstumam”, lai gan tā nav karsta vieta. Tā atvēsinošā ietekme joprojām ir redzama krastu temperatūrās.",
+    "In View 3, water is excluded from the overall heat exposure index and the two deeper-reading indices (30 m pixels at least half covered by water according to ESA WorldCover): with no vegetation and low reflectance it would look exposed to heat even though it is not. The area averages of these indices also count land only.": "3. skatā ūdens ir izslēgts no kopējās karstuma ietekmes indeksa un abiem padziļinātajiem indeksiem (30 m pikseļi, kurus vismaz par pusi klāj ūdens saskaņā ar ESA WorldCover): bez veģetācijas un ar zemu atstarošanu tas izskatītos pakļauts karstumam, lai gan tā nav. Arī šo indeksu vidējās vērtības pa teritorijām ņem vērā tikai sauszemi.",
   },
 };
 

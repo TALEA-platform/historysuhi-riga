@@ -140,6 +140,7 @@ This view explains the 2026 physical context behind heat accumulation. All layer
 - **Formula:**  
   $$X_{\mathrm{norm}}(x,y) = \frac{X(x,y) - \min_{\Omega} X}{\max_{\Omega} X - \min_{\Omega} X}$$
 - **How to read it:** normalization makes LST, NDVI, and Albedo comparable as index inputs. It does not change them into physical units.
+- **Water excluded:** 30 m pixels at least half covered by water (ESA WorldCover v200, class 80) are removed before normalization, so they neither set the min/max nor receive a UHEI, HVI or HRI value; district averages of these indices count land only. Water has no vegetation and low reflectance and would otherwise look highly exposed although it is not a hot spot; its cooling effect remains visible in the LST of the shores. The mask is published as `webapp_rasters/water_mask_2026_30m.tif` (1 = water) and labelled on the View 3 maps.
 
 **UHEI: combined exposure**
 
@@ -395,6 +396,7 @@ Questa vista spiega il contesto fisico 2026 che aiuta a interpretare l'accumulo 
 - **Formula:**  
   $$X_{\mathrm{norm}}(x,y) = \frac{X(x,y) - \min_{\Omega} X}{\max_{\Omega} X - \min_{\Omega} X}$$
 - **Come si legge:** la normalizzazione rende LST, NDVI e Albedo confrontabili come input degli indici. Non trasforma questi valori in nuove unità fisiche.
+- **Acqua esclusa:** i pixel da 30 m coperti almeno per metà da acqua (ESA WorldCover v200, classe 80) vengono tolti prima della normalizzazione: non fissano minimo e massimo e non ricevono un valore di UHEI, HVI o HRI; anche le medie per zona di questi indici contano solo la terraferma. L'acqua non ha verde e riflette poco, quindi risulterebbe molto esposta pur non essendo una zona di calore; il suo effetto rinfrescante resta visibile nella LST delle rive. La maschera è pubblicata come `webapp_rasters/water_mask_2026_30m.tif` (1 = acqua) ed è indicata sulle mappe della Vista 3.
 
 **UHEI: esposizione combinata**
 
